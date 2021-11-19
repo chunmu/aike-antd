@@ -17,6 +17,7 @@ export default collect(async nextProps => {
   }
 
   const locale = utils.isZhCN(pathname) ? 'zh-CN' : 'en-US';
+  console.log(nextProps);
   const pageDataPromise =
     typeof pageData === 'function'
       ? pageData()

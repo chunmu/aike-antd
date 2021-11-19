@@ -1,6 +1,6 @@
 {
-  "name": "antd",
-  "version": "4.17.0",
+  "name": "aike-antd",
+  "version": "0.0.1",
   "description": "An enterprise-class UI design language and React components implementation",
   "title": "Ant Design",
   "keywords": [
@@ -117,6 +117,7 @@
     "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.2.0",
     "lodash": "^4.17.21",
+    "mobx": "^6.3.7",
     "moment": "^2.25.3",
     "rc-cascader": "~2.1.0",
     "rc-checkbox": "~2.3.0",

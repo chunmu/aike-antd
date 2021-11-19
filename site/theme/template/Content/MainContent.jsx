@@ -38,6 +38,7 @@ function getModuleData(props) {
       break;
     default:
       data = props.picked[moduleName];
+      console.log(JSON.stringify(data));
   }
   return data.filter(({ meta }) => !meta.filename.endsWith(excludedSuffix));
 }
@@ -125,6 +126,7 @@ class MainContent extends Component {
       themeConfig,
       intl: { locale },
     } = this.props;
+
     const moduleData = getModuleData(this.props);
     const menuItems = utils.getMenuItems(
       moduleData,
@@ -137,6 +139,7 @@ class MainContent extends Component {
         return menuItem.children.map(leaf => this.generateMenuItem(false, leaf, footerNavIcons));
       }
       if (menuItem.type === 'type') {
+        console.log(menuItem);
         return (
           <Menu.ItemGroup title={menuItem.title} key={menuItem.title}>
             {menuItem.children

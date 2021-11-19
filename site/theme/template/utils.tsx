@@ -45,7 +45,6 @@ export function getMenuItems(
       menuItems.push(meta);
       return;
     }
-
     // Component
     if (meta.category === 'Components' && meta.type) {
       let type = menuItems.find(i => i.title === meta.type);
